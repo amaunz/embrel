@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -fmessage-length=0  -Wno-write-strings -Wall -fopenmp -march=native  -shared -Wl,-soname,libgraphs.so -o libgraphs.so CMakeFiles/graphs.dir/graph_cfg.cpp.o CMakeFiles/graphs.dir/sdf/sdf_graph.cpp.o CMakeFiles/graphs.dir/sdf/sdf_reader.cpp.o 

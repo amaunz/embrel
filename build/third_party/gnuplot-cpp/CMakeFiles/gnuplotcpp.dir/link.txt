@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -fmessage-length=0  -Wno-write-strings -Wall -fopenmp -march=native  -shared -Wl,-soname,libgnuplotcpp.so -o libgnuplotcpp.so CMakeFiles/gnuplotcpp.dir/gnuplot_i.cc.o 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -fmessage-length=0  -Wno-write-strings -Wall -fopenmp -march=native -Wno-write-strings -Wall  -shared -Wl,-soname,liberlconfig.so -o liberlconfig.so CMakeFiles/erlconfig.dir/configuration.cpp.o -lboost_program_options-mt -lboost_filesystem-mt -lboost_system-mt -lboost_regex-mt -lboost_serialization-mt 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -fmessage-length=0  -Wno-write-strings -Wall -fopenmp -march=native -Wno-write-strings -Wall  -shared -Wl,-soname,liberltools.so -o liberltools.so CMakeFiles/erltools.dir/stats.cpp.o CMakeFiles/erltools.dir/csvreader.cpp.o CMakeFiles/erltools.dir/rprop.cpp.o CMakeFiles/erltools.dir/rcode.cpp.o 

@@ -1,0 +1,63 @@
+Allowed Options:
+
+========== Generic Options =================:
+  -h [ --help ]                  print usage message
+  -c [ --cfg ] arg (=config.dat) use this as a config file
+  -a [ --action ] arg (=count)   what to do
+  -v [ --verbose ]               be verbose
+  -q [ --quiet ]                 be quiet
+
+========== General Config Options ==========:
+  --output-dir arg (=.) pathname for output (prepended to output)
+
+========== Graph Options ==========:
+
+  SDFReader Options:
+  --SDFReader.files arg              sdf-files, format: file:class,file:class
+  --SDFReader.fixed_size arg (=0)    fixed size of molecules
+  --SDFReader.use_cache arg (=1)     use cached graphs if existent
+  --SDFReader.max_num arg (=1000000) maximum number of molecules per file
+
+========== Action Options ==========:
+
+  Code Options:
+  --code.input_file arg                       input file basename (w/o ext)
+  --code.contrast_eq_neigh arg (=30)          min num neigh for contrast 
+                                              equalization
+  --code.hebb_iter arg (=100)                 hebb iterations
+  -m [ --code.dont_run_code ]                 dont run CODE
+  -R [ --code.remove_sim ]                    remove similar features
+  --code.img_width arg (=750)                 Image Width
+  --code.img_height arg (=600)                Image Height
+  --code.delete_perc arg (=0.980000019)       Delete this many percent of 
+                                              features
+  --code.size_fact arg (=1)                   Multiply Size with this
+  --code.pos_rand arg (=0)                    Random position increment uniform
+                                              (pixels)
+  --code.nrestarts arg (=1)                   # random restarts
+  --code.dont_use_pxy                         don't use observation-query 
+                                              statistics
+  --code.dont_use_pxx                         don't use query-query statistics
+  --code.model arg (=UM)                      CODE model to use
+  --code.rprop_maxiter arg (=300)             Max Num of RPROP iterations
+  --code.linlog_graph_out arg (=linlog.graph) write linlog graph to this file
+  --code.linlog_pos_in arg (=linlog.pos)      read linlog-generated positions 
+                                              from this file
+  --code.linlog_write                         write linlog graph
+  --code.linlog_read                          read linlog positions instead of 
+                                              using CODE ones
+  --code.aleph_queries arg                    embed additional queries (from 
+                                              ALEPH, f.ex.)
+  --code.dvc                                  write distance vs. co-occurrence 
+                                              statistics
+  --code.dvc_file arg (=dist_vs_cooc.dat)     file to write distance vs. 
+                                              co-occurrence statistics to
+  -e [ --code.entropy_emb ]                   do a 2nd, entropy-based embedding
+                                              after 1st
+
+  Count Options:
+  -r [ --count.recount ]             Force re-counting
+  -f [ --count.min_freq ] arg (=10)  Minimum Frequency
+  -l [ --count.max_level ] arg (=30) Maximum Depth
+  --count.out_base arg (=chains)     Base name of output files
+
